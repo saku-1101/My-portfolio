@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/stylesheet.css">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<!-- slick -->
+  <link rel="stylesheet" type="text/css" href="style/slick.css"/>
+<!-- // Add the new slick-theme.css if you want the default styling -->
+<link rel="stylesheet" type="text/css" href="style/slick-theme.css"/>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- ロード画面 -->
+  <div id="js-loading" class="loading">
+    <div class="loading-panel-wrap">
+      <div class="loading-panel">
+          <span><h3>🍕Waite a sec...</h3></span> 
+      </div>
+      <div class="shadow"></div>
+  </div>
+  </div>
+
+  <!-- ヘッダー -->
+  <header class="header" id="js-header">
+    <!-- ロゴ -->
+    <p class="logo-box">
+      <a href="#" class="text" id="js-logo">  
+          SAKU
+      </a>
+      <span>web create</span>
+    </p>
+    <!-- ナビ -->
+    <nav class="nav">
+      <div class="nav-btn" id="js-navBtn">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-box" id="js-navBox">
+        <div class="nav-close" id="js-navClose">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="undo-alt" class="svg-inline--fa fa-undo-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="35" height="35"><path fill="currentColor" d="M255.545 8c-66.269.119-126.438 26.233-170.86 68.685L48.971 40.971C33.851 25.851 8 36.559 8 57.941V192c0 13.255 10.745 24 24 24h134.059c21.382 0 32.09-25.851 16.971-40.971l-41.75-41.75c30.864-28.899 70.801-44.907 113.23-45.273 92.398-.798 170.283 73.977 169.484 169.442C423.236 348.009 349.816 424 256 424c-41.127 0-79.997-14.678-110.63-41.556-4.743-4.161-11.906-3.908-16.368.553L89.34 422.659c-4.872 4.872-4.631 12.815.482 17.433C133.798 479.813 192.074 504 256 504c136.966 0 247.999-111.033 248-247.998C504.001 119.193 392.354 7.755 255.545 8z"></path></svg>
+        </div>
+        <div class="nav-contents" id="js-navCon">
+          <h4 class="nav-h4">Contents</h4>
+          <ul class="nav-ul" id="js-navUl">
+            <li class="nav-li">
+              <a href="#" class="nav-a">
+                <span class="nav-a-en">TOP</span>
+                <span class="nav-a-ja">トップ</span>
+              </a>
+            </li>
+            <li class="nav-li">
+              <a href="#sec02-about" class="nav-a">
+                <span class="nav-a-en">ABOUT ME</span>
+                <br>
+                <span class="nav-a-ja">私について</span>
+              </a>
+            </li>
+            <li class="nav-li">
+              <a href="#sec03-service" class="nav-a">
+                <span class="nav-a-en">SKILLS&SUPPORT</span>
+                <span class="nav-a-ja">お手伝いできること</span>
+              </a>
+            </li>
+            <li class="nav-li">
+              <a href="#sec04-works" class="nav-a">
+                <span class="nav-a-en">WORKS</span>
+                <span class="nav-a-ja">これまでのこと</span>
+              </a>
+            </li>
+            <li class="nav-li">
+              <a href="#sec05-contact" class="nav-a">
+                <span class="nav-a-en">CONTACT</span>
+                <span class="nav-a-ja">お問い合わせ</span>
+              </a>
+            </li>
+            <!-- <li class="nav-li">
+              <a class="nav-a" target="_blank" rel="noopener noreferrer" href="https://mayo1201blog.com">
+                <span class="nav-a-en">BLOG</span>
+                <span class="nav-a-ja">ブログ</span>
+              </a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" target="_blank" rel="noopener noreferrer" href="https://twitter.com/mayo1201blog">
+                <span class="nav-a-en">Twitter</span>
+                <span class="nav-a-ja">ツイッター</span>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+   
+  <main>
+      <div class="sec1" >
+        <div class="sec1__container">
+          <p class="move-text">
+            I design and code beautifully simple things.
+          </p>
+          <div class="bound-text">
+            <span class="word">H</span>
+            <span class="word">I</span>
+            <span class="bang">!</span>
+          </div>
+          <p class="arrow">
+            <span>
+              scroll
+            </span>
+            <span>
+              ↓
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div id="scroll-container">
+        <div class="sec2 js-rellax" data-rellax-speed="6.2">
+        </div>
+          <div  class="scrollContent1 " >
+              <div class="sec3">
+              </div>
+              <div class="sec4"><div class="sec4__container   animate sec-animate">
+                <div class="sec4__container--left">
+                  <h2 class="animate">ABOUT ME</h2>
+                  <img src="./images/saku.jpg" alt="">
+      
+                </div>
+                <div class="sec4__container--right">
+                  <h2>Sakura Adachi</h2>
+                  <h3>Frontend develper</h3>
+                  <p> <i class="fas fa-map-pin"></i>Fukuoka</p>
+                  <p>
+                    安達さくらと申します。現役国立大理系学部の2年生です。
+                   普段は大学の授業をこなしつつ、プログラミングをしています。
+                    好きなことは、食べ歩き(無類のプリン好き)、映画鑑賞、
+                    もちろんプログラミングです！
+                    柔軟かつ丁寧な対応を心がけております。
+                    お気軽にご連絡ください。
+                  </p>
+                </div>
+              </div></div>
+              <div class="sec5"><div class="sec5__container">
+                  <h2 class="animate txt-animate">SKILLS & SUPPORTS</h2>
+                  <div class="items">
+                    <div class="items__left animate sec-animate">
+                      <div class="title">
+                        <div class="icon">
+                          <img src="./images/goodat.png" alt="">
+                        </div>
+                        <p>
+                          I'm used to these language...
+                        </p>
+                      </div>
+                      <ul class="skills">
+                        <li>
+                          <p><img src="./images/html5-brands.svg" alt="">
+                            HTML5</p>
+                          <div class="js-bar"></div> 
+                          <!-- pの位置は変えずに、liを相対して、ここを下にする。 -->
+                          <!-- keyframeでアニメーション -->
+                        </li>
+                        <li>
+                          <p><img src="./images/css3-alt-brands.svg" alt="">
+                            CSS3</p>
+                          <div class="js-bar"></div> 
+                          <!-- pの位置は変えずに、liを相対して、ここを下にする。 -->
+                          <!-- keyframeでアニメーション -->
+                        </li>
+                        <li>
+                          <p><img src="./images/sass-brands.svg" alt="">
+                            Sass</p>
+                          <div class="js-bar"></div> 
+                          <!-- pの位置は変えずに、liを相対して、ここを下にする。 -->
+                          <!-- keyframeでアニメーション -->
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="items__right animate sec-animate">
+                      <div class="title">
+                        <div class="icon"><img src="./images/heartpoint.png" alt=""></div>
+                        <p>
+                          I get used to these language...
+                        </p>
+                      </div>
+                      <ul class="skills">
+                        <li>
+                          <p><img src="./images/2333384-code-jquery-social_85595.png" alt="">
+                            Jquery</p>
+                          <div class="js-bar js-bar-jq"></div> 
+                          <!-- pの位置は変えずに、liを相対して、ここを下にする。 -->
+                          <!-- keyframeでアニメーション -->
+                        </li>
+                        <li>
+                          <p><img src="./images/js-brands.svg" alt="">
+                            Java Script</p>
+                          <div class="js-bar js-bar-js"></div> 
+                          <!-- pの位置は変えずに、liを相対して、ここを下にする。 -->
+                          <!-- keyframeでアニメーション -->
+                        </li>
+                        <li>
+                          <p><img src="./images/python-brands.svg" alt="">
+                            Phython</p>
+                          <div class="js-bar js-bar-py"></div> 
+                          <!-- pの位置は変えずに、liを相対して、ここを下にする。 -->
+                          <!-- keyframeでアニメーション -->
+                        </li>
+                        <li>
+                          <p><img src="./images/C++-595b40b75ba036ed117d5b19.svg" alt="">
+                            C++</p>
+                          <div class="js-bar js-bar-c"></div> 
+                          <!-- pの位置は変えずに、liを相対して、ここを下にする。 -->
+                          <!-- keyframeでアニメーション -->
+                        </li>
+                      </ul>              
+                    </div>
+                  </div>
+                  <div class="button animate sec-animate" id="js-barBtn">Click Here and<br>Check My Level! </div>
+                  
+              </div>
+            </div>
+          </div>
+
+      </div>
+       
+
+      <div id="scroll-container2">
+        <div class="sec6 js-rellax2" data-rellax-speed="6.5" data-rellax-desktop-speed="6.0">
+          <!-- background -->
+        </div>
+        <div class="scrollContent2">
+          <div class="sec7"></div>
+         
+          <div class="sec8"><div class="sec8__container">
+              <h2 class="animate txt-animate">WORKS</h2>
+
+              <div class="slick-box animate animate-from-right">
+
+                <div class="slick">
+                  <div><a href="https://saku-1101.github.io/LIG/"> <img src="images/LIG.png" alt=""></a></div>
+
+                  <div><a href="https://saku-1101.github.io/foodforyou/"><img src="images/foodforyou.png" alt=""></a></div>
+
+                  <div><a href="https://saku-1101.github.io/Flat-design/"><img src="images/faltdesign.png" alt=""></a></div>
+
+                  <div><a href="https://saku-1101.github.io/Fashion/"> <img src="./images/XD.png" alt=""></a></div>
+
+                  <div><a href="https://saku-1101.github.io/wanko/"><img src="./images/wannko.png" alt=""></a></div>
+
+                  <div><a href="https://saku-1101.github.io/Primitive/"><img src="./images/fashion.png" alt=""></a></div>
+
+                </div>
+                <div class="dots"></div>
+              </div>
+
+            </div></div>
+         
+          <div class="sec9">
+              
+              <div class="sec9__container">
+                <h2 class="animate txt-animate">CONTACT ME</h2>
+                <p class="animate txt-animate-late">
+                  ご不明点等ございましたら、お手数ですが、下記メールアドレスまでご連絡ください。</p>
+                <h3><i class="far fa-envelope"></i>
+                  <a href="mailto:sakupi1101@outlook.jp"> sakupi1101@outlook.jp</a>
+                  <i class="far fa-paper-plane"></i>
+                </h3>
+              </div>
+
+            </div>  
+       
+        </div>
+      </div>
+      
+     
+
+
+
+  </main>
+  <footer>
+    <p>Copyright© Sakura Adachi All Right Reserved.</p>
+  </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="script/slick.js"></script>
+  <script type="text/javascript" src="script/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script type="text/javascript"  src="./script/TweenMax.min.js"></script>
+  <script type="text/javascript"  src="./script/ScrollMagic.min.js"></script>
+  <script type="text/javascript"  src="./script/animation.gsap.min.js"></script>
+  <script type="text/javascript"  src="./script/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+  <script src="./script/rellax.js"></script>
+  <!-- <script src="./script/ScrollMagic.js"></script> -->
+  <script src="script/script.js"></script>
+</body>
+</html>
