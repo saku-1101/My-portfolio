@@ -24,6 +24,7 @@ const cursor=document.querySelector('#js-cursor');
 document.addEventListener("mousemove", function (e) {
   cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
 });
+// カーソルの処理// loadingのアニメーション
 window.onload=()=>{   // ページを読み込んだら
   // loadingのアニメーション
  loadBox.classList.add('loaded'); 
@@ -168,15 +169,6 @@ document.addEventListener("scroll",()=> {
     }
   };
 });
-
-
-// カーソルの処理
-document.addEventListener("mousemove", function (e) {
-  cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-});
-
-
-
 
 
 // .move-textのアニメーション
