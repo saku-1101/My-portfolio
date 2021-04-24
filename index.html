@@ -31,7 +31,8 @@
       <div class="shadow"></div>
   </div>
   </div>
-
+<!-- マウスストーカー -->
+<div class="cursor" id="js-cursor"></div>
   <!-- ヘッダー -->
   <header class="header" id="js-header">
     <!-- ロゴ -->
@@ -54,56 +55,45 @@
           <h4 class="nav-h4">Contents</h4>
           <ul class="nav-ul" id="js-navUl">
             <li class="nav-li">
-              <a href="#" class="nav-a">
+              <a href="#top" class="nav-a">
                 <span class="nav-a-en">TOP</span>
                 <span class="nav-a-ja">トップ</span>
               </a>
             </li>
             <li class="nav-li">
-              <a href="#sec02-about" class="nav-a">
+              <a href="#about" class="nav-a">
                 <span class="nav-a-en">ABOUT ME</span>
                 <br>
                 <span class="nav-a-ja">私について</span>
               </a>
             </li>
             <li class="nav-li">
-              <a href="#sec03-service" class="nav-a">
+              <a href="#support" class="nav-a">
                 <span class="nav-a-en">SKILLS&SUPPORT</span>
                 <span class="nav-a-ja">お手伝いできること</span>
               </a>
             </li>
             <li class="nav-li">
-              <a href="#sec04-works" class="nav-a">
+              <a href="#works" class="nav-a">
                 <span class="nav-a-en">WORKS</span>
                 <span class="nav-a-ja">これまでのこと</span>
               </a>
             </li>
             <li class="nav-li">
-              <a href="#sec05-contact" class="nav-a">
+              <a href="#contact" class="nav-a">
                 <span class="nav-a-en">CONTACT</span>
                 <span class="nav-a-ja">お問い合わせ</span>
               </a>
             </li>
-            <!-- <li class="nav-li">
-              <a class="nav-a" target="_blank" rel="noopener noreferrer" href="https://mayo1201blog.com">
-                <span class="nav-a-en">BLOG</span>
-                <span class="nav-a-ja">ブログ</span>
-              </a>
-            </li>
-            <li class="nav-li">
-              <a class="nav-a" target="_blank" rel="noopener noreferrer" href="https://twitter.com/mayo1201blog">
-                <span class="nav-a-en">Twitter</span>
-                <span class="nav-a-ja">ツイッター</span>
-              </a>
-            </li> -->
           </ul>
         </div>
       </div>
     </nav>
   </header>
-   
+
+   <!-- メイン --> 
   <main>
-      <div class="sec1" >
+      <div class="sec1" id="top" >
         <div class="sec1__container">
           <p class="move-text">
             I design and code beautifully simple things.
@@ -127,10 +117,10 @@
       <div id="scroll-container">
         <div class="sec2 js-rellax" data-rellax-speed="6.2">
         </div>
-          <div  class="scrollContent1 " >
+          <div  class="scrollContent1">
               <div class="sec3">
               </div>
-              <div class="sec4"><div class="sec4__container   animate sec-animate">
+              <div class="sec4" id="about"><div class="sec4__container   animate sec-animate">
                 <div class="sec4__container--left">
                   <h2 class="animate">ABOUT ME</h2>
                   <img src="./images/saku.jpg" alt="">
@@ -150,7 +140,7 @@
                   </p>
                 </div>
               </div></div>
-              <div class="sec5"><div class="sec5__container">
+              <div class="sec5" id="support"><div class="sec5__container">
                   <h2 class="animate txt-animate">SKILLS & SUPPORTS</h2>
                   <div class="items">
                     <div class="items__left animate sec-animate">
@@ -241,12 +231,13 @@
         <div class="scrollContent2">
           <div class="sec7"></div>
          
-          <div class="sec8"><div class="sec8__container">
+          <div class="sec8" id="works"><div class="sec8__container">
               <h2 class="animate txt-animate">WORKS</h2>
 
               <div class="slick-box animate animate-from-right">
 
                 <div class="slick">
+
                   <div><a href="https://saku-1101.github.io/LIG/"> <img src="images/LIG.png" alt=""></a></div>
 
                   <div><a href="https://saku-1101.github.io/foodforyou/"><img src="images/foodforyou.png" alt=""></a></div>
@@ -261,11 +252,12 @@
 
                 </div>
                 <div class="dots"></div>
+                
               </div>
 
             </div></div>
          
-          <div class="sec9">
+          <div class="sec9" id="contact">
               
               <div class="sec9__container">
                 <h2 class="animate txt-animate">CONTACT ME</h2>

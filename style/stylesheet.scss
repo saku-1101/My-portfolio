@@ -2,6 +2,7 @@
 @charset "UTF-8";
 html{
   font-size: 62.5%;
+  // scroll-behavior: smooth;
 }
 body{
 line-height: 1.7;
@@ -44,20 +45,9 @@ list-style: none;
   justify-content: center;
   @content;
 }
-// $pc: 1024px; 
-// $tab: 680px; 
+
 $sp: 768px; 
 
-// @mixin pc {
-//   @media (max-width: ($pc)) {
-//     @content;
-//   }
-// }
-// @mixin tab {
-//     @media (max-width: ($tab)) {
-//         @content;
-//       }
-//     }
 @mixin sp {
   @media (max-width: ($sp)) {
     @content;
@@ -65,6 +55,7 @@ $sp: 768px;
 }
 
 $layer: (
+  cursor:999,
   load: 100,
   drawer: 40,
   menu: 35,
@@ -80,7 +71,7 @@ $font-english3:'Quicksand', sans-serif;
 $font-jp: 'Noto Sans JP', sans-serif;
 $font-color:(
   "main":#E9EAEF,
-  "main-2":#063E7D,
+  "main-2":#063e7d,
   "main-3":#ff6d6d
 );
 $shadow:(
@@ -108,6 +99,22 @@ $shadow:(
     // この部分がcssに反映される
   }
 }
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  top: -4px;   // デフォルトは本物のカーソル領域左端が自作カーソルの中心のため是正
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  background:#063e7d88;
+  border-radius: 50%;
+  transform: translate(0,0);
+  transition: all 0.1s;
+  transition-timing-function: ease-out;
+  z-index: map-get($map: $layer, $key: cursor);
+}
+
+
 /* loading */
 .loading {
   width: 100vw;
@@ -961,6 +968,9 @@ footer{
             &:not(.slick-current){
               opacity: .5;
               overflow: hidden;
+             a{
+              pointer-events:none;
+             }
             }
             &.slick-current{
               transform: scale(1);

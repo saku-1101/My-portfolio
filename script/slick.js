@@ -15,6 +15,7 @@ $(document).ready(function(){
     initialSlide: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>',
+    // asNavFor: '.slick-slide',
     responsive: [
       {
         breakpoint: 768,
@@ -35,27 +36,10 @@ $(document).ready(function(){
         }
       }
     ]
-    
-
-    // responsive: [
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       arrows: false,
-    //       centerMode: true,
-    //       centerPadding: '40px',
-    //       slidesToShow: 3
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       arrows: false,
-    //       centerMode: true,
-    //       centerPadding: '40px',
-    //       slidesToShow: 1
-    //     }
-    //   }
-    // ]
+  
   });
+  //   $('.slick-slide').slick({
+  // asNavFor: '.slick',
+  //   slide:'div',
+  //   });
 });

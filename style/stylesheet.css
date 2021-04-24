@@ -33,6 +33,24 @@ main .sec1 .sec1__container, main .sec4__container, main .sec5__container, main 
   padding: 2% 5%;
 }
 
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  top: -8px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  background: #063e7d88;
+  border-radius: 50%;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  z-index: 999;
+}
+
 /* loading */
 .loading {
   width: 100vw;
@@ -496,7 +514,7 @@ main .sec1 .sec1__container {
 
 main .sec1 .sec1__container .move-text {
   font-size: clamp(8px,3vw,24px);
-  color: #063E7D;
+  color: #063e7d;
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   letter-spacing: 6px;
@@ -506,7 +524,7 @@ main .sec1 .sec1__container .move-text {
 main .sec1 .sec1__container .bound-text {
   position: relative;
   font-size: min(360px,40vw);
-  color: #063E7D;
+  color: #063e7d;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -662,7 +680,7 @@ main .sec4__container--left h2 {
       align-self: flex-start;
   font-family: "Montserrat Subrayada", sans-serif;
   font-size: min(24px,4vw);
-  color: #063E7D;
+  color: #063e7d;
   font-weight: lighter;
   margin-bottom: clamp(100px,45vw,300px);
   margin-top: min(10vw,50px);
@@ -690,21 +708,21 @@ main .sec4__container--right {
 main .sec4__container--right h2 {
   font-family: "Quicksand", sans-serif;
   font-size: min(45px,10vw);
-  color: #063E7D;
+  color: #063e7d;
   font-weight: lighter;
   white-space: nowrap;
 }
 
 main .sec4__container--right h3 {
   font-size: min(25px,7vw);
-  color: #063E7D;
+  color: #063e7d;
   font-family: "Quicksand", sans-serif;
   font-weight: lighter;
 }
 
 main .sec4__container--right > p:nth-of-type(1) {
   font-size: min(20px,5vw);
-  color: #063E7D;
+  color: #063e7d;
   font-family: "Quicksand", sans-serif;
   font-weight: lighter;
 }
@@ -717,7 +735,7 @@ main .sec4__container--right > p:nth-of-type(1) i {
 main .sec4__container--right > p:nth-of-type(2) {
   margin-top: min(70px,10vw);
   font-size: min(18px,3vw);
-  color: #063E7D;
+  color: #063e7d;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: lighter;
   line-height: 1.9;
@@ -738,7 +756,7 @@ main .sec5__container h2 {
       align-self: flex-start;
   font-family: "Montserrat Subrayada", sans-serif;
   font-size: min(24px,4vw);
-  color: #063E7D;
+  color: #063e7d;
   font-weight: lighter;
   margin-bottom: min(120px,120vw);
 }
@@ -815,7 +833,7 @@ main .sec5__container .items__left .title .icon, main .sec5__container .items__r
 
 main .sec5__container .items__left .title p, main .sec5__container .items__right .title p {
   font-size: min(24px,4vw);
-  color: #063E7D;
+  color: #063e7d;
 }
 
 main .sec5__container .items__left .skills li, main .sec5__container .items__right .skills li {
@@ -838,7 +856,7 @@ main .sec5__container .items__left .skills li p, main .sec5__container .items__r
       -ms-flex-pack: start;
           justify-content: flex-start;
   font-size: min(20px,5vw);
-  color: #063E7D;
+  color: #063e7d;
 }
 
 main .sec5__container .items__left .skills li p img, main .sec5__container .items__right .skills li p img {
@@ -1050,7 +1068,7 @@ main .sec5__container .button {
   -webkit-box-shadow: 15px 15px 30px #9e9fa3, -15px -15px 30px #ffffff;
           box-shadow: 15px 15px 30px #9e9fa3, -15px -15px 30px #ffffff;
   font-size: min(24px,4vw);
-  color: #063E7D;
+  color: #063e7d;
   width: min(300px,20%);
   margin: min(20px,3%) auto;
   margin-top: min(100px,15%);
@@ -1121,7 +1139,7 @@ main .sec8__container {
 main .sec8__container h2 {
   font-family: "Montserrat Subrayada", sans-serif;
   font-size: min(24px,4vw);
-  color: #063E7D;
+  color: #063e7d;
   font-weight: lighter;
   margin-bottom: min(120px,120vw);
 }
@@ -1169,14 +1187,14 @@ main .sec9__container {
 main .sec9__container h2 {
   font-family: "Montserrat Subrayada", sans-serif;
   font-size: min(24px,4vw);
-  color: #063E7D;
+  color: #063e7d;
   font-weight: lighter;
 }
 
 main .sec9__container p {
   position: relative;
   font-size: min(18px,4vw);
-  color: #063E7D;
+  color: #063e7d;
   font-weight: lighter;
   padding-left: 5%;
   margin-top: min(100px,10vw);
@@ -1205,7 +1223,7 @@ main .sec9__container h3 {
 main .sec9__container h3 a {
   font-weight: lighter;
   font-size: min(20px,4vw);
-  color: #063E7D;
+  color: #063e7d;
   font-family: "Alegreya Sans SC", sans-serif;
   pointer-events: auto;
   display: inline-block;
@@ -1270,7 +1288,7 @@ footer p {
   text-align: center;
   font-weight: lighter;
   font-size: min(20px,3vw);
-  color: #063E7D;
+  color: #063e7d;
   font-family: "Alegreya Sans SC", sans-serif;
 }
 
@@ -1315,6 +1333,10 @@ footer p {
 .slick-box .slick .slick-list .slick-track .slick-slide:not(.slick-current) {
   opacity: .5;
   overflow: hidden;
+}
+
+.slick-box .slick .slick-list .slick-track .slick-slide:not(.slick-current) a {
+  pointer-events: none;
 }
 
 .slick-box .slick .slick-list .slick-track .slick-slide.slick-current {

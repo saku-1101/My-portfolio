@@ -2,6 +2,8 @@
 const navBtn=document.querySelector('#js-navBtn');
 const navBox=document.querySelector('#js-navBox');
 const navClose=document.querySelector('#js-navClose');
+const navLink=document.querySelectorAll('a.nav-a');
+// console.log(navLink);
 const barBtn=document.querySelector('#js-barBtn');
 const Hnoscroll=document.querySelector('#js-header');
 const arryBar=document.getElementsByClassName('js-bar');
@@ -13,17 +15,64 @@ const arryBarpy=document.querySelector(".js-bar-py");
 const arryBarc=document.querySelector(".js-bar-c");
 const loadBox=document.querySelector('#js-loading');
 const secAnimate=document.getElementsByClassName("animate");// スクロールアニメーションの要素
+const aTags=document.querySelectorAll('a');
+const cursor=document.querySelector('#js-cursor');
 
 
 
-
-// loadingのアニメーション
+// カーソルの処理
+document.addEventListener("mousemove", function (e) {
+  cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+});
 window.onload=()=>{   // ページを読み込んだら
+  // loadingのアニメーション
  loadBox.classList.add('loaded'); 
+ // カーソルの処理
+ for (let aTagIndex = 0; aTagIndex < aTags.length; aTagIndex++) {
+  const aTag = aTags[aTagIndex]; // 全aタグの取得
+  const cursorStyle = cursor.style;
+
+  function mouseOver() { // マウスストーカーを拡大
+    cursorStyle.top = "-18px";
+    cursorStyle.left = "-18px";
+    cursorStyle.width = "36px";
+    cursorStyle.height = "36px";
+    cursorStyle.opacity = 0.2;
+  };
+  function mouseOut() { // もとに戻す
+    cursorStyle.top = "-4px";
+    cursorStyle.left = "-4px";
+   cursorStyle.width = "8px";
+   cursorStyle.height = "8px";
+   cursorStyle.opacity = 1;
+  };
+
+  aTag.onmouseover = function() {
+    mouseOver(); // aタグhover処理
+  };
+  aTag.onmouseout = function() {
+    mouseOut(); // aタグノンhover処理
+  };
+  navBtn.onmouseover = function() {
+    mouseOver(); // メニューボタンhover処理
+  };
+  navBtn.onmouseout = function() {
+    mouseOut(); // メニューボタンノンhover処理
+  };
+  barBtn.onmouseover = function() {
+    mouseOver(); // バー部分ボタンhover処理
+  };
+  barBtn.onmouseout = function() {
+    mouseOut(); // バー部分ボタンノンhover処理
+  };
+
+
+};
 }
 
-// navのアニメーション
+
 addEventListener("DOMContentLoaded", function() {
+  // navのアニメーション
   navBtn.addEventListener("mouseover", function() {
     this.classList.toggle("nav-btn-hover");
   });
@@ -63,6 +112,17 @@ for (let i = 0; i < textWrapper.length; i++) {
     navBtn.classList.remove("nav-btn-active");
     Hnoscroll.classList.remove("no-scroll");
   });
+
+  // ページ内リンク
+  for (let index = 0; index < navLink.length; index++) {
+    const element = navLink[index];
+    element.addEventListener("click", function() {
+      navBox.classList.remove("nav-box-active");
+      navBtn.classList.remove("nav-btn-active");
+      Hnoscroll.classList.remove("no-scroll");
+    });
+  }
+  
 
 
   // barのアニメ～ション
@@ -110,6 +170,10 @@ document.addEventListener("scroll",()=> {
 });
 
 
+// カーソルの処理
+document.addEventListener("mousemove", function (e) {
+  cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+});
 
 
 
